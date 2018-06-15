@@ -14,9 +14,11 @@ def input_to_index(user_input)
 end  
  
 #move - places character in board index given by the arguments
+
 def move(board, input_to_index, character = "X")
   board[input_to_index] = character
 end 
+
 
 # position_taken (less verbose) -checks to see whether that index on board is taken or not
 def position_taken?(board, index)
