@@ -66,6 +66,7 @@ def turn_count(board)
   board.count {|position| position !=" "}
 end
 
+#current_player
 
 def current_player(board)
   if turn_count(board).even?
