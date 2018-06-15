@@ -73,7 +73,7 @@ def current_player(board)
   else return "O"
   end
 end
-  binding.pry
+
 
 # Define your WIN_COMBINATIONS constant
 
