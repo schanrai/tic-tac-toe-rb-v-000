@@ -68,11 +68,11 @@ end
 
 
 def current_player(board)
-  if !turn_count(board).odd?
-    binding.pry
+  if turn_count(board).even?
     return "X"
   else return "O"
   end
+  binding.pry
 end
 
 
