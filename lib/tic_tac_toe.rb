@@ -57,7 +57,8 @@ def turn(board)
     character = current_player(board)
     move(board, index, character)
     display_board(board)
-   else puts "Whoops! That's not a valid move"
+   else 
+     puts "Whoops! That's not a valid move"
      turn(board) 
   end
 end
