@@ -48,12 +48,13 @@ end
 # turn will repeat loop to ask for input until condition of valid move = true
 # Asking the user for their move by position 1-9.Receiving the user input.Convert position to an index.If the move is valid, make the move and display the board to the user.If the move is invalid, ask for a new move until a valid move is received.
 
+#turn
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, character = "X")
+    move(board, index, character)
     display_board(board)
    else puts "Whoops! That's not a valid move"
      turn(board) 
