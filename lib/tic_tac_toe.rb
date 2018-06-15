@@ -55,7 +55,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, character = "X")
     display_board(board)
-   else turn(board) 
+   else puts "Whoops! That's not a valid move"
+     turn(board) 
   end
 end
 
