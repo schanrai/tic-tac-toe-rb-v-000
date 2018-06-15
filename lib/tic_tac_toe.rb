@@ -15,7 +15,7 @@ end
  
 #move - places character in board index given by the arguments
 
-def move(board, input_to_index, character = "X")
+def move(board, input_to_index, character)
   board[input_to_index] = character
 end 
 
